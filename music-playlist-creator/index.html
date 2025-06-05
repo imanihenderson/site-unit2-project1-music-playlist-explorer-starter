@@ -11,34 +11,37 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="navbar">
         <h2 id="headertitle">Music Playlist Explorer</h2>
         </nav>
     </header>
 
     <main> 
-        <section class="playlist-cards">
-            <div id="playlist-card">
-                <img src="">
-                <h3>Playlist Title</h3>
-                <p>Creator Name</p>
-                <p>Likes</p>
-            </div>
+        <section class="playlist-cards" id="playlist-cards">
+            <!-- <article class="playlist-card">
+                <img class="playlist-images" src="https://dk2dv4ezy246u.cloudfront.net/widgets/sSF3jjWNwSOr_large.jpg">
+                <h3 class="playlist-titles">Playlist Title</h3>
+                <p class="author">Creator Name</p>
+                <p class="like-count">5</p>
+                
+            </article>
+     -->
             
         </section>  
     </main>
-
-    <div id="playlistModal" class="modal-overlay">
-        <div class="modal-content">
+    
+    
+        <div id="modal-content" class="modal-overlay">
             <span class="close">&times;</span>
-            <h1 id="MusicModal"></h1>
-            <img id="modalImage" src="" alt="Modal Image">
+            <img class="playlist-images" src="" alt="Modal Image">
+            <h2 id="playlistName">Playlist Name</h2>
+            <h3 id="author">Author Name</h3>
         </div>
-    </div>
 
 
-    <footer>
-        <!-- Your footer content here -->
+
+    <footer class="footer">
+        <h2 class="footertext">Music Playlist Explorer</h2>
     </footer>
     <script src="data/data.js"></script>
     <script src="script.js"></script>
