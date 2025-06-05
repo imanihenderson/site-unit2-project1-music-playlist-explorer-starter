@@ -6,9 +6,8 @@ body {
 }
 
 .navbar {
-    background-color: #cda4ed;
     padding: .05rem;
-    color: #f2edf5;
+    color: #786c6b;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
@@ -43,7 +42,7 @@ body {
 }
 
 .playlist-images{
-    width: 200px; 
+    width: calc(100% - 3px); 
     height: 160px;
     display: flex;
     margin-bottom: 30px;
@@ -85,8 +84,30 @@ body {
     gap: 20px;
 }
 
+.like-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.like-button img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.2s ease;
+}
+
+.like-button.liked img {
+    transform: scale(1.2);
+}
+
+#like-count {
+    margin-top: 8px;
+    font-size: .9rem;
+    
+}
+
 .footer {
-    background-color: #cda4ed;
     opacity:.5;
     padding: .01rem;
     color: #f2edf5;
