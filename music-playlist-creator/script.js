@@ -18,6 +18,7 @@ for (let i = 0; i < data.playlists.length; i++) {
         <img class="like-icon" src="https://openclipart.org/image/800px/234835" />
     </button>
     <span class="like-count">${playlist.like_count}</span>
+    <span class="delete-playlist-x">&times;</span>
     </div>
     `;
 
@@ -39,7 +40,7 @@ let currentPlaylist = null;
 function openModal(playlist) {
     console.log("in open modal function");
 
-    // Store the current playlist for shuffle functionality
+    // stores the current playlist for shuffle functionality
     currentPlaylist = {...playlist};
 
     const imageEl = modal.querySelector("#modal-playlist-image");
@@ -79,7 +80,6 @@ window.onclick = function(event) {
     }
 };
 
-// Removing redundant event listener since cards already have click handlers
 
 // like button code
 
@@ -161,14 +161,31 @@ document.getElementById('shuffle-button').addEventListener('click', () => {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-const createCard = document.querySelector('#create-new');
-const submitModal = document.querySelector('#submit-modal');
+const toggleDelete = document.querySelector('#delete-playlist')
+const deletePlaylist = document.getElementsByClassName('delete-playlist-x');
+const container = document.getElementById('playlist-cards');
 
-function openSubmitModal() {
-    submitModal.style.display = "flex";
+function xAppear() {
+    for (let i = 0; i < deletePlaylist.length; i++) {
+            deletePlaylist[i].style.display = "flex";
+        }
+    }
+function playlistDeletion(event) {
+    // prevents other listeners from being triggered 
+    event.stopPropagation();
+    // finds closest playlist-card ancestor 
+    const card = event.target.closest('.playlist-card');
+    card.remove();
 }
 
-createCard.addEventListener("click", openSubmitModal);
+toggleDelete.addEventListener("click", () => {
+        xAppear();
+    });
+
+  for (let i = 0; i < deletePlaylist.length; i++) {
+        deletePlaylist[i].addEventListener("click", playlistDeletion);
+    }
 });
+
 
 

@@ -238,25 +238,17 @@ ul {
     justify-content: center;
 }
 
-#new-playlist {
-  position: fixed;
-  justify-content: center;
-  align-items: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #fefefe;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 60%;
-  height: 70%;
-  z-index: 1000;
-  box-shadow: 0px 4px 16px ;
-  border-radius: 4%;
-  display: flex;
-  font-size:35px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  display: none;
+
+#delete-playlist {
+    cursor: pointer;
 }
 
-
+.delete-playlist-x {
+   color: #aaa;
+   font-size: 28px;
+   font-weight: bold;
+   cursor: pointer;
+   float: right;
+   display: none;
+   z-index: 1000;
+}
