@@ -150,7 +150,7 @@ document.getElementById('search-input').addEventListener('keyup', (event) => {
 // event listener for shuffle button
 document.getElementById('shuffle-button').addEventListener('click', () => {
     if (currentPlaylist) {
-        // Create a copy of the songs array to shuffle
+        // create a copy of the songs array to shuffle
         const shuffledSongs = [...currentPlaylist.songs];
         shuffleArray(shuffledSongs);
 
@@ -161,10 +161,10 @@ document.getElementById('shuffle-button').addEventListener('click', () => {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-const toggleDelete = document.querySelector('#delete-playlist')
+const toggleDelete = document.querySelector('#delete-playlist');
 const deletePlaylist = document.getElementsByClassName('delete-playlist-x');
 const container = document.getElementById('playlist-cards');
-
+const alphaSortButton = document.getElementById('sort');
 function xAppear() {
     for (let i = 0; i < deletePlaylist.length; i++) {
             deletePlaylist[i].style.display = "flex";
@@ -185,7 +185,20 @@ toggleDelete.addEventListener("click", () => {
   for (let i = 0; i < deletePlaylist.length; i++) {
         deletePlaylist[i].addEventListener("click", playlistDeletion);
     }
+
+//   function alphaSort() {
+//   const playlists = data.playlists;
+//   playlists.sort((a, b) => a.name.localeCompare(b.name));
+//   console.log(playlists);
+//   }
+
+// alphaSortButton.addEventListener("click", () => {
+//   alphaSort();
+// });
+
 });
+
+
 
 
 

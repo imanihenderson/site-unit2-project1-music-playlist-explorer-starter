@@ -126,7 +126,7 @@ body {
 }
 
 .playlist-images{
-    width: calc(100% - 3px);
+    width: calc(100% - 10px);
     height: 160px;
     display: flex;
     margin-bottom: 30px;
@@ -213,6 +213,7 @@ ul {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     font-size: 18px;
+    border: black;
 }
 
 .featured-img {

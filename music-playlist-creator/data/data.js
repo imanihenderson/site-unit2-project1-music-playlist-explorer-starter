@@ -66,7 +66,7 @@ const data = {
         "Coffee by Miguel (4:50)",
         "Stay Alive by José González (2:24)"
       ],
-      "like_count": "8"
+      "like_count": "0"
     },
     {
       "playlistID": "7890",

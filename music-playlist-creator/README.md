@@ -97,9 +97,9 @@ Deployed Application (**required**): [Music Playlist Explorer Deployed Site](htt
     - [ ] Editing all of a playlist's features (name, creator, AND songs)
     - [ ] Editing some of a playlist's features (name, creator, OR songs) 
 
-- [ ] **Delete Playlists**
-  - [ ] Add a delete button to each playlist tile within the grid view.
-  - [ ] When clicked, the playlist is removed from the playlist grid view.
+- [x] **Delete Playlists**
+  - [x] Add a delete button to each playlist tile within the grid view.
+  - [x] When clicked, the playlist is removed from the playlist grid view.
 
 - [x] **Search Functionality**
   - [x] Implement a search bar that allows users to filter playlists by:
@@ -138,15 +138,15 @@ Deployed Application (**required**): [Music Playlist Explorer Deployed Site](htt
 
 * Did the topics discussed in your labs prepare you to complete the assignment? Be specific, which features in your weekly assignment did you feel unprepared to complete?
 
-Add your response here
+The topics discussed in labs prepared me to complete the assignment through introducing the topics holistically and providing the groundwork for me to understand the functionality of everything I needed to implement. The main features I felt a bit unprepared to complete were the add and edit playlist, and sorting features.
 
 * If you had more time, what would you have done differently? Would you have added additional features? Changed the way your project responded to a particular event, etc.
   
-Add your response here
+I would have customized my website more, implemented all stretch features, and taken more time to gain a true understanding of everything I was implementing. I also would've added more interactivity, and the ability to listen to a sample of each song in every playlist. I also would've added a similar deletion functionality to the one on iPhones, where the X to delete an object shakes upon prompting. 
 
 * Reflect on your project demo, what went well? Were there things that maybe didn't go as planned? Did you notice something that your peer did that you would like to try next time?
 
-Add your response here
+Overall, I think the design of my website is clean and straightforward. I also feel like it's accessible and mirrors a lot of the functionalities of other popular websites. The main thing that didnt go as planned, was my intention to implement all stretch features. Going forward, I'm going to be more intentional with my planning to ensure I have enough time for stretch feature implementation. 
 
 ### Open-source libraries used
 
@@ -154,4 +154,4 @@ Add your response here
 
 ### Shout out
 
-Give a shout out to somebody from your cohort that especially helped you during your project. This can be a fellow peer, instructor, TA, mentor, etc.
+I'd like to shout out TAs Jesus and Terrence, they were very helpful in acclimating to the course this week!
