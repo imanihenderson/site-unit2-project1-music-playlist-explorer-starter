@@ -3,45 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>Music Playlist Explorer</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <nav class="navbar">
-        <h2 id="headertitle">Music Playlist Explorer</h2>
+            <h2 id="headertitle"><a href="index.html">Music Playlist Explorer</a></h2>
+            <ul class="nav-list">
+                <li><a href="featured.html">Featured</a></li>
+                <li id="create-new">Create New</li>
+            </ul>
+            <section class="search-container">
+                <input type="text" id="search-input" placeholder="Search playlists...">
+                <button id="search-button">Search</button>
+            </section>
         </nav>
     </header>
 
-    <main> 
+    <main>
         <section class="playlist-cards" id="playlist-cards">
-            <!-- <article class="playlist-card">
-                <img class="playlist-images" src="https://dk2dv4ezy246u.cloudfront.net/widgets/sSF3jjWNwSOr_large.jpg">
-                <h3 class="playlist-titles">Playlist Title</h3>
-                <p class="author">Creator Name</p>
-                <p class="like-count">5</p>
-
-                <div class="like-container">
-                    <button id="like-button" class="like-button">img</button>
-                    <span id="like-count>0</span>"
-                </div>
-                
-            </article>
-     -->
             
-        </section>  
+
+        </section>
     </main>
-    
-    
-        <div id="modal-content" class="modal-overlay">
+
+
+        <section id="modal-content" class="modal-overlay">
             <span class="close">&times;</span>
-            <img class="playlist-images" src="" alt="Modal Image">
-            <h2 id="playlistName">Playlist Name</h2>
-            <h3 id="author">Author Name</h3>
-        </div>
+            <section class="modal-body">
+            <img class="playlist-images" id="modal-playlist-image" src="" alt="Modal Image">
+            <h2 id="playlist-titles"></h2>
+            <h3 id="author"></h3>
+
+            <section class="song-controls">
+                <button id="shuffle-button">Shuffle Songs</button>
+            </section>
+
+            <ul class="song-list"></ul>
+        </section>
+    </section>
+
+    <section id="submit-modal" class="submit-modal">
+    <span class="close">&times;</span>
+    <section id="new-playlist">
+    <form id="submit-form" action="/submit-form" method="POST">
+    <label for="playlistname">Playlist Name</label><br>
+    <input type="text" id="playlistname" name="playlistname" required><br><br>
+
+    <label for="firstname">Your Name</label><br>
+    <input type="firstname" id="firstname" name="firstname" required><br><br>
+
+    <input id="playlist-button" type="submit" value="Create Playlist">
+    </form>
+    </section>
+    </section>
+    
 
 
 
